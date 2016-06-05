@@ -1,6 +1,6 @@
 {
   "name": "@angularclass/form-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Partick Stapleton <patrick@angularclass.com>",
   "description": "Angular 2 Form Errors",
   "main": "dist/index.js",
