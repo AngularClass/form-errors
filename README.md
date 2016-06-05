@@ -42,7 +42,7 @@ import {ANGULARCLASS_FORM_ERRORS_DIRECTIVES} from '@angularclass/form-errors';
 
     <form
       #accountForm="ngForm"
-      (ngSubmit)="onSubmit(accountForm.value, accountForm.valid)"
+      (ngSubmit)="onUpdateProfile(accountForm.value, accountForm.valid)"
     >
 
       <div>
