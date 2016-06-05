@@ -6,7 +6,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "noEmitHelpers": true,
+    "noEmitHelpers": false,
     "outDir": "dist",
     "rootDir": "src"
   },
