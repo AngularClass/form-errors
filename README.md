@@ -82,7 +82,7 @@ export class AccountEditComponent {
 ```
 
 ### todo
-- [ ] use ng-content
+- [ ] use ng-content for template driven forms
 - [ ] by default use the control next to the directive
 
 ___
