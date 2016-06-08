@@ -13,9 +13,12 @@ npm install @angularclass/form-errors --save
 
 # API
 ```typescript
-bootstrap(App, [
-  ...ANGULARCLASS_FORM_ERRORS_DIRECTIVES // [ AcFormErrors ]
-]);
+@Component({
+  selector: 'account',
+  directives: [
+    ...ANGULARCLASS_FORM_ERRORS_DIRECTIVES // [ AcMatchControlValidator ]
+  ]
+});
 ```
 ```html
 <ac-form-errors control="username" [errors]="{'required': 'this is required'}"></ac-form-errors>
@@ -28,7 +31,7 @@ import { Component }  from '@angular/core';
 import { FORM_PROVIDERS, FORM_DIRECTIVES } from '@angular/common';
 
 
-import {ANGULARCLASS_FORM_ERRORS_DIRECTIVES} from '@angularclass/form-errors';
+import { ANGULARCLASS_FORM_ERRORS_DIRECTIVES } from '@angularclass/form-errors';
 
 
 
