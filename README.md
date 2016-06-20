@@ -1,6 +1,9 @@
 # AngularClass Form Errors
 > A component that is designed to show and hide messages based on the state of a key/value object.
 
+1.x.x uses the old form api   
+2.x.x uses the new forms api
+
 # Install
 ```bash
 npm install @angularclass/form-errors --save
