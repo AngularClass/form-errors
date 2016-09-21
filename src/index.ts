@@ -1,5 +1,5 @@
 import { Component, Host }  from '@angular/core';
-import { NgForm, ControlGroup } from '@angular/common';
+import { NgForm, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'ac-form-errors',
@@ -23,8 +23,8 @@ export class AcFormErrors {
   }
 
   get errorMessages(): Array<{type: string, message: string}> {
-    var form: ControlGroup = this.formDir.form;
-    var control = form.find(this.controlPath);
+    var form: FormGroup = this.formDir.form;
+    var control = form.get(this.controlPath);
     var _errors = [];
     if (control !== undefined && control !== null  && control.touched) {
       let errors = Object.keys(this.errorTypes);
